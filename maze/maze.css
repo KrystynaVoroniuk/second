@@ -1,0 +1,44 @@
+body{
+    border: 10px solid black;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    
+
+}
+
+.entry{
+    
+    border: 10px solid rgb(240, 17, 17);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(240, 17, 17);;
+
+}
+.exit{
+    
+    border: 10px solid green;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+
+}
+
+.wall{
+    
+    /* border: 10px solid rgb(50, 54, 50); */
+    width: 60px;
+    height: 60px;
+    background: url(394785.jpg);
+}
+
+.canal{
+    border: 10px solid rgb(228, 231, 16);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(228, 231, 16);
+
+}
