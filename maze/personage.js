@@ -1,27 +1,42 @@
-function User(start, end, mass, url) {
-    this.x = x;
-    this.y = y;
-    DrawElem.call(this, url);
 
-    User.prototype.right = function(){this.x++};
-    User.prototype.left = function(){this.x--};
-    User.prototype.up = function(){this.y++};
-    User.prototype.down = function(){this.y--};
-    Object.setPrototypeOf(User.prototype, DrawElem.prototype);
-}    
+class User {
+    constructor(startX, startY,mass){
+        this.x = startX;
+        this.y = startY;
+        this.mass = mass;
+
+    }
+    right(){
+        if((this.x > this.mass[this.y].length - 1)&&(mass[startX][startY] === 0)){
+            return;
+        }
+        this.x++;
+
+    }
+    left(){
+        if((this.x > this.mass[this.y].length - 1) &&(mass[startX][startY] === 0)){
+            return;
+        }
+        this.x--;
+    }
+
+    up(){
+        if((this.y > this.mass.length - 1) &&(mass[startX][startY] === 0)){
+            return;
+        }
+        this.y++;
+    }
+
+    down(){
+        if((this.y > this.mass.length - 1) &&(mass[startX][startY] === 0)){
+            return;
+        }
+        this.y--;
+    }
 
 
-
-function DrawElem(url){
-    this.url = url;
-    DrawElem.prototype.createDomElem = function(){
-        let img = document.createElement('img'); 
-          img.src = this.url;
-          img.style.width = "50px";
-          img.style.height = "50px";
-          document.body.append(img);
-          return img;
-
-    } 
-    
 }
+
+ 
+
+
