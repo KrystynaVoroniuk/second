@@ -1,4 +1,4 @@
-function maze(gen) { 
+export function maze(gen) { 
  
     for (let item of gen.matrix) { 
       for (let cell of item) { 
@@ -27,4 +27,4 @@ function maze(gen) {
    
     } 
   } 
-  maze(gen);
+  // maze(gen);
