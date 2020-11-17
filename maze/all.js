@@ -3,4 +3,4 @@ import {Generator} from './maze.js';
 
 let gen = new Generator(10, 10);
 console.log(gen.matrix); 
-maze(gen);
+maze(gen, {x: 5, y: 5});
